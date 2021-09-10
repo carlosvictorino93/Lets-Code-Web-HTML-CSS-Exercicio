@@ -1,0 +1,96 @@
+:root{
+    font-size: 20px;
+}
+main {
+    display: grid;
+    grid-template-columns: 7fr 3fr;
+    grid-gap: 25px;
+    grid-template-areas:
+    "col1 col2";
+}
+body{
+    margin: 35px;
+}
+header {
+    border: 3px solid #717171;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h2 {
+    color: #0082b9;
+    border-bottom: 2px solid #6d6d6d;
+    font-style: italic;
+}
+h3 {
+    font-weight: bold;
+    margin-bottom: 0;
+}
+p {
+    font-size: 1.15rem;
+}
+ul {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 1.15rem;
+}
+span {
+    display: inline-block;
+    padding: 6px;
+    margin-left: 5px;
+}
+
+.sem-bolinha{
+    list-style-type: none;
+    padding-left: 0;
+}
+.li-item{
+    display: grid;
+    grid-template-columns: 7fr 3fr;
+    grid-template-areas:
+    "nomeItem score";
+}
+.li-nome{
+    grid-area: nomeItem;
+    justify-self: start;
+}
+.local {
+    display: inline
+}
+.data {
+    display: inline;
+    margin-left: 10px;
+}
+.nota {
+    grid-area: score;
+    justify-self: end;
+}
+.cheio {
+    background-color: #028cb3;
+}
+.vazio {
+    background-color: #cccccc;
+}
+
+#col1 {
+    grid-area: col1
+}
+#col2 {
+    grid-area: col2
+}
+#cargo {
+    margin: 0;
+    padding-right: 10px;
+    padding-left: 10px;
+    position: relative;
+    top: 10px;
+    background-color: white;
+    color: #686868;
+    font-weight: 550 ;
+    font-size: 1rem;
+    text-transform: uppercase
+}
+#nome {
+    color: #008eb3;
+    font-size: 2.5rem;
+}
